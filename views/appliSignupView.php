@@ -4,6 +4,12 @@ include "../include/dbConfig.inc.php";
 include "../classes/applSignup.class.php";
 require_once "../include/checkErrors.php";
 $appliSignup = new AppliSignup();
+
+// Gi tilbakemelding dersom brukeren ble registrert (session[signup_success]=== true)
+if (isset($_SESSION["signup_success"]) && $_SESSION["signup_success"] === true) {
+    echo '<p>Vellykket registrering! Vennligst logg inn.</p>';
+    unset($_SESSION["signup_success"]); // Clear the success flag
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

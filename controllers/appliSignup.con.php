@@ -74,6 +74,8 @@ if ($this->checkEmptyFields()== true) {
         exit();
     }
     {
+        $_SESSION["signup_success"] = true;
+        header("Location: ../views/appliSignupView.php");
     $this->setApplicant($this->firstName,$this->lastName,$this->email,$this->city,$this->password);
 }
 }

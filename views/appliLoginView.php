@@ -7,9 +7,7 @@
     <title>Sign Up Forms</title>
 </head>
 <body>
-<div class="header">
-       
-    </div>
+<div class="login">
     <div class="form-container">
     <!-- Applicant login Form -->
     <form id="signupForm" action="../include/appliLogin.inc.php" method="post">
@@ -23,7 +21,7 @@
 
         <button type="submit" name="submit" value="submit" class="standardButton">Sign Up</button>
     </form>
-   
     </div>
+</div>
 </body>
 </html>

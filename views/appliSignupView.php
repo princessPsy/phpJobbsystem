@@ -23,7 +23,7 @@ if (isset($_SESSION["signup_success"]) && $_SESSION["signup_success"] === true) 
 <?php
     checkSignupErrors();
     ?>
-<div class="header">
+<div class="signup">
        
     </div>
     <div class="form-container">
